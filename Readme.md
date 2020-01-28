@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Nyurgun Burtsev](https://up.htmlacademy.ru/htmlcss/27/user/604831).
-* Наставник: `Неизвестно`.
+* Наставник: [Sergey Kravchenko](https://htmlacademy.ru/profile/id13921).
 
 ---
 
