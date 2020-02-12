@@ -8,7 +8,7 @@
     <header class="header">
       <div class="header__top">
         <a class="header__logo" href="index.html">
-          <img src="img/logo-technomart.svg" width="109" height="19" alt="Техномарт">
+          <img src="img/logo-technomart.svg" width="109" height="19" alt="логотип Техномарт">
         </a>
         <form class="header__search">
           <input type="search" placeholder="Поиск:">
@@ -71,11 +71,9 @@
           <fieldset class="filter__fieldset">
             <legend>Цена:</legend>
             <div class="range">
-              <div class="slider">
-                <div class="track">
-                  <button class="toggle toggle--min"></button>
-                  <button class="toggle toggle--max"></button>
-                </div>
+              <div class="track">
+                <button class="toggle toggle--min"></button>
+                <button class="toggle toggle--max"></button>
               </div>
             </div>
             <div class="value">
@@ -112,17 +110,23 @@
             <legend>Питание:</legend>
             <ul class="filter__list">
               <li class="filter__item">
-                <input class="filter__radio" type="radio" name="power" id="filter-battery" checked>
+                <input class="filter__radio" type="radio" name="power" value="battery" id="filter-battery" checked>
                 <label for="filter-battery">Аккумуляторные</label>
               </li>
               <li class="filter__item">
-                <input class="filter__radio" type="radio" name="power" id="filter-mains">
+                <input class="filter__radio" type="radio" name="power" value="mains" id="filter-mains">
                 <label for="filter-mains">Сетевые</label>
               </li>
             </ul>
           </fieldset>
           <button type="submit" class="filter__button button">Показать</button>
         </form>
+        <div class="cart-popup">
+          <p>Товар добавлен в корзину!</p>
+          <button type="button">Закрыть</button>
+          <button type="button">Оформить заказ</button>
+          <button type="button">Продолжить покупки</button>
+        </div>
         <section class="results">
           <div class="sorting">
             <p>Сортировка:</p>
@@ -249,7 +253,7 @@
       <div class="footer__top">
         <div class="footer__adress">
           <a class="footer" href="index.html">
-            <img src="img/logo-technomart.svg" width="138" height="23" alt="Техномарт">
+            <img src="img/logo-technomart.svg" width="138" height="23" alt="логотип Техномарт">
           </a>
           <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>+7 (812) 555-05-55</p>
         </div>
@@ -272,9 +276,9 @@
       <div class="footer__bottom">
         <p>© 2010–2019 Компания «Техномарт»<br>Все права защищены</p>
         <ul class="footer__social">
-          <li><a href="#">Вконтакте</a></li>
-          <li><a href="#">Фейстбук</a></li>
-          <li><a href="#">Инстаграм</a></li>
+          <li><a href="#" aria-label="Вконтакте"></a></li>
+          <li><a href="#" aria-label="Фейстбук"></a></li>
+          <li><a href="#" aria-label="Инстаграм"></a></li>
         </ul>
         <p>Обратная связь:<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
         <p>Разработано:<a href="https://up.htmlacademy.ru/htmlcss/27">htmlacademy.ru</a></p>
