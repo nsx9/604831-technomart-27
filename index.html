@@ -195,32 +195,6 @@
           <a class="contacts__link">Заблудились? Напишите нам!</a>
         </div>
       </section>
-      <section class="write-us-popup">
-        <h2 class="visually-hiodden">Напишите нам</h2>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <p>
-            <label for="user-name">Ваше имя:</label>
-            <input id="user-name" type="text" name="name" placeholder="Имя фамилия">
-          </p>
-          <p>
-            <label for="user-email">Ваш e-mail:</label>
-            <input id="user-email" type="email" name="email" placeholder="email@example.com">
-          </p>
-          <p>
-            <label for="user-message">Текст письма:</label>
-            <input id="user-message" type="text" name="message" placeholder="В свободной форме">
-          </p>
-          <button type="submit">Отправить</button>
-        </form>
-        <button type="button">Закрыть</button>
-      </section>
-      <section class="map-popup">
-        <h2 class="visually-hidden">Как до нас добраться</h2>
-        <p>
-          <img src="img/map-popup.jpg" width="1736" height="779" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
-        </p>
-        <button type="button">Закрыть</button>
-      </section>
     </main>
     <footer class="footer">
       <div class="footer__top">
@@ -249,13 +223,39 @@
       <div class="footer__bottom">
         <p>© 2010–2019 Компания «Техномарт»<br>Все права защищены</p>
         <ul class="footer__social">
-          <li><a href="#" aria-label="Вконтакте"></a></li>
-          <li><a href="#" aria-label="Фейстбук"></a></li>
-          <li><a href="#" aria-label="Инстаграм"></a></li>
+          <li><a href="#" aria-label="Мы в Вконтакте"></a></li>
+          <li><a href="#" aria-label="Мы в Фейсбуке"></a></li>
+          <li><a href="#" aria-label="Мы в Инстаграме"></a></li>
         </ul>
         <p>Обратная связь:<a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
         <p>Разработано:<a href="https://up.htmlacademy.ru/htmlcss/27">htmlacademy.ru</a></p>
       </div>
     </footer>
+    <section class="map-popup">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <p>
+        <img src="img/map-popup.jpg" width="1736" height="779" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+      </p>
+      <button type="button">Закрыть</button>
+    </section>
+    <section class="write-us-popup">
+      <h2 class="visually-hiodden">Напишите нам</h2>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="user-name">Ваше имя:</label>
+          <input id="user-name" type="text" name="name" placeholder="Имя фамилия">
+        </p>
+        <p>
+          <label for="user-email">Ваш e-mail:</label>
+          <input id="user-email" type="email" name="email" placeholder="email@example.com">
+        </p>
+        <p>
+          <label for="user-message">Текст письма:</label>
+          <textarea id="user-message" name="message" placeholder="В свободной форме"></textarea>
+        </p>
+        <button type="submit">Отправить</button>
+      </form>
+      <button type="button">Закрыть</button>
+    </section>
   </body>
 </html>
