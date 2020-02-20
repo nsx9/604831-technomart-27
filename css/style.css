@@ -43,7 +43,18 @@ img {
   background-color: #ba2732;
 }
 
+.header__top-wrapper {
+  background-color: #293449;
+}
+
 .header__top {
+  width: 940px;
+  min-height: 42px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-grow: 1;
   background-color: #293449;
   color: #ffffff;
   font-size: 17px;
@@ -51,7 +62,9 @@ img {
 
 .header__logo {
   background-color: #ee3643;
-  border-bottom: 5px solid #b52933;
+  /*border-bottom: 5px solid #b52933;*/
+  box-shadow: 0 0 5px 0 #b52933;          /* Как убрать прозрачность?*/
+  width: 220px;
 }
 
 .header__logo:hover,
@@ -69,6 +82,7 @@ img {
 .header__search input {
   background-color: #293449;
   border: none;
+  width: 270px;
 }
 
 .header__search input:hover {
@@ -81,6 +95,7 @@ img {
 
 .header__link {
   color: #ffffff;
+  width: 150px;
 }
 
 .header__link:hover,
@@ -107,11 +122,27 @@ img {
   color: rgba(255, 255, 255, 0.5);
 }
 
-.header__inner {
+.header__inner-wrapper {
   background-color: #f4f7f9;
+  margin-bottom: 59px;
+}
+
+.header__inner {
+  width: 940px;
+  min-height: 278px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
 }
 
 .header__title {
+  width: 196px;
+  height: 60px;
+  margin: 0;
+  margin-left: 53px;
   color: #ee3643;
   font-size: 16px;
   font-style: italic;
@@ -126,6 +157,7 @@ img {
 }
 
 .header__contacts p {
+  margin: 0;
   color: #32425c;
   font-size: 14px;
   line-height: 24px;
@@ -148,7 +180,15 @@ img {
   color: rgba(0, 0, 0, 0.3);
 }
 
+.main-nav {
+  width: 940px;
+}
+
 .main-nav__list {
+  margin: 0;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
   background-color: #293449;
   list-style: none;
   border-bottom: 5px solid #1d2739;
@@ -170,8 +210,36 @@ img {
   color: rgba(255, 255, 255, 0.5);
 }
 
+.container {
+  width: 940px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
 .offers {
   color: #ffffff;
+}
+
+.offers__list,
+.goods__list,
+.manufacturers__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.offers__item {
+  width: 300px;
+  height: 123px;
+  margin-bottom: 20px;
+}
+
+.offers-slider__item:nth-child(2) {
+  display: none;
 }
 
 .offers__item-1 {
@@ -192,6 +260,11 @@ img {
 
 .offers__item-5 {
   background-color: #ffc047;
+}
+
+.offers-slider {
+  width: 620px;
+  height: 266px;
 }
 
 .offers__item-title {
@@ -223,6 +296,10 @@ img {
 }
 
 .section-header {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #f9f5f0;
 }
 
@@ -237,6 +314,7 @@ img {
 .goods__item {
   border: 1px solid #eaeaea;
   list-style: none;
+  margin-bottom: 21px;
 }
 
 .goods__item:hover,
@@ -258,6 +336,9 @@ img {
 }
 
 .manufacturers__item {
+  width: 220px;
+  height: 145px;
+  margin-bottom: 20px;
   border: 1px solid #eaeaea;
   list-style: none;
 }
@@ -274,9 +355,18 @@ img {
 
 .service {
   background-color: #f4f7f9;
+  min-height: 522px;
+  padding-top: 68px;
+}
+
+.service__wrapper {
+  margin: 0 auto;
+  width: 940px;
 }
 
 .service__title {
+  margin: 0;
+  margin-bottom: 38px;
   font-size: 30px;
   font-weight: normal;
   line-height: 30px;
@@ -284,6 +374,8 @@ img {
 }
 
 .service p {
+  margin: 0;
+  margin-bottom: 74px;
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
@@ -292,9 +384,13 @@ img {
 
 .service-slider__menu {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .service-slider__button {
+  width: 240px;
+  height: 61px;
   background-color: #405069;
   color: #ffffff;
   font-size: 21px;
@@ -313,6 +409,7 @@ img {
 }
 
 .service-slider__title {
+  margin-bottom: 34px;
   font-size: 36px;
   line-height: 36px;
   color: #32425c;
@@ -320,14 +417,30 @@ img {
   font-weight: normal;
 }
 
+.about__wrapper {
+  width: 940px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 83px;
+}
+
 .about p {
+  margin: 0;
+  margin-bottom: 36px;
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
 
+.description {
+  width: 520px;
+}
+
 .description__title,
 .contacts__title {
+  margin: 0;
+  margin-bottom: 38px;
   font-weight: normal;
   font-size: 30px;
   line-height: 30px;
@@ -340,12 +453,23 @@ img {
   line-height: 20px;
 }
 
+.contacts {
+  width: 300px;
+  margin-bottom: 86px;
+}
+
 .footer {
   color: #ffffff;
 }
 
 .footer__top {
   background-color: #32425c;
+}
+
+.footer__top-wrapper {
+  display: flex;
+  width: 940px;
+  margin: 0 auto;
 }
 
 .footer__logo {
@@ -358,7 +482,15 @@ img {
   line-height: 24px;
 }
 
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
 .footer__list {
+  display: flex;
+  justify-content: space-between;
   list-style: none;
   font-size: 18px;
   line-height: 24px;
@@ -386,6 +518,14 @@ img {
   background-color: #293449;
 }
 
+.footer__bottom-wrapper {
+  padding-top: 30px;
+  display: flex;
+  width: 940px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
 .footer__bottom p {
   font-size: 16px;
   line-height: 18px;
@@ -395,8 +535,17 @@ img {
   list-style: none;
 }
 */
-.feedback,
+
+.feedback {
+  width: 135px;
+}
+
 .developed {
+  width: 96px;
+}
+
+.feedback a,
+.developed a {
   color: #ffda96;
 }
 
@@ -467,6 +616,8 @@ img {
 }
 
 .user-block__list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -485,6 +636,8 @@ img {
 }
 
 .breadcrumbs {
+  height: 9px;
+  display: flex;
   list-style: none;
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
@@ -499,6 +652,19 @@ img {
   text-transform: uppercase;
 }
 
+.catalog__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog .goods {
+  width: 700px;
+}
+
+.filter__form {
+  width: 220px;
+}
+
 .form-title,
 .sorting,
 .range,
@@ -508,6 +674,16 @@ img {
   font-size: 13px;
   line-height: 18px;
   text-transform: uppercase;
+}
+
+.sorting {
+  display: flex;
+  margin-bottom: 21px;
+}
+
+.sorting__list,
+.sorting__arrows {
+  display: flex;
 }
 
 .filter__fieldset {
@@ -567,6 +743,8 @@ img {
 
 .pagination__list {
   list-style: none;
+  display: flex;
+  padding: 0;
 }
 
 .pagination__page-link,                         /*Поправить состояния*/
@@ -592,9 +770,18 @@ img {
 
 .note {
   background-color: #f4f7f9;
+  height: 261px;
+}
+
+.note__wrapper {
+  width: 940px;
+  margin: 0 auto;
+  padding-top: 67px;
 }
 
 .note__title {
+  margin: 0;
+  margin-bottom: 20px;
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -605,6 +792,8 @@ img {
   font-family: 'PT Sans', Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
+  margin: 0;
+
 }
 
 .cart-popup {
